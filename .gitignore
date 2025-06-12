@@ -1,0 +1,13 @@
+# Client
+client/node_modules/
+client/.env
+
+# Server
+server/venv/
+server/__pycache__/
+*.pyc
+*.db
+server/.env
+
+# System files
+.DS_Store

@@ -1,0 +1,162 @@
+.chatContainer {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  min-height: 100vh;
+  background: #f8f9fc;
+  padding-bottom: 4rem;
+  font-size: 1.2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6a0dad; /* new purple */
+  color: white;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.header h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.chatBox {
+  background: #ffffff;
+  padding: 1.2rem;
+  height: 280px;
+  overflow-y: auto;
+  border-radius: 6px;
+  font-size: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.userMsg,
+.botMsg {
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  max-width: 80%;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.userMsg {
+  align-self: flex-end;
+  background-color: #dbeafe; /* soft blue */
+}
+
+.botMsg {
+  align-self: flex-start;
+  background-color: #e6e6fa; /* soft lavender */
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.inputGroup input {
+  padding: 0.8rem 1.1rem;
+  font-size: 1.15rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #ffffff;
+}
+
+.inputGroup button {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  font-size: 1.05rem;
+  background-color: #20b2aa; /* teal */
+  color: white;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.inputGroup button:hover {
+  background-color: #1e9c95;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.viewAllBtn {
+  background-color: #ffffff;
+  color: #6a0dad;
+  border: 2px solid #6a0dad;
+  padding: 0.5rem 1rem;
+  font-size: 1.05rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.viewAllBtn:hover {
+  background-color: #f0e6ff;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.logoutWrapper {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.logoutWrapper button {
+  background: #ffffff;
+  color: #6a0dad;
+  padding: 0.5rem 1rem;
+  font-size: 1.05rem;
+  border-radius: 999px;
+  border: 2px solid #6a0dad;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.logoutWrapper button:hover {
+  background-color: #f0e6ff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header h2 {
+    font-size: 1.5rem;
+  }
+
+  .chatBox {
+    height: 220px;
+    font-size: 1rem;
+  }
+
+  .inputGroup input {
+    font-size: 1rem;
+  }
+
+  .inputGroup button,
+  .viewAllBtn,
+  .logoutWrapper button {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

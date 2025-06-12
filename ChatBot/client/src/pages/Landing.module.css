@@ -1,0 +1,78 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #f8f9fc, #e6e6fa);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6a0dad;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.navbar h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.btnGroup {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.btnGroup button {
+  padding: 0.4rem 0.8rem;
+  background: white;
+  color: #6a0dad;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.btnGroup button:hover {
+  background-color: #f0e6ff;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #6a0dad;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  color: #333;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  background-color: #20b2aa;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #1e9c95;
+}
